@@ -19,4 +19,10 @@ This project simulates a Vehicle Management System in TypeScript, modeling vario
 - **Wheel**: Represents a wheel with basic properties like diameter.
 
 ## link to the video 
-https://drive.google.com/file/d/15hoqKsS43O-1-zL_zPm_PH8XfEZ0kRPA/view?usp=sharing
+https://drive.google.com/file/d/1etdKYFBmHN0nONj71jVTR0Y6lhetk--0/view?usp=sharing
+
+
+
+
+
+
