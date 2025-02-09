@@ -1,28 +1,72 @@
-# typescript-assignmnet
-# Vehicle Management System
+# Vehicle Command Line Application
 
-## Overview
+## Description
 
-This project simulates a Vehicle Management System in TypeScript, modeling various vehicle types like trucks, motorbikes, and cars. It includes behaviors such as starting, stopping, accelerating, and towing, leveraging class inheritance and interfaces.
+This project is a **Vehicle Command Line Application** that allows users to create and interact with different vehicle types, including **Car**, **Truck**, and **Motorbike**. The application prompts the user to enter vehicle details and then provides the ability to perform actions such as starting the vehicle, printing its details, and performing actions specific to each vehicle type (e.g., **wheelie** for motorbikes and **tow** for trucks).
 
-### Key Features:
-- **Driveable Interface**: Defines driving behaviors (start, stop, accelerate, etc.).
-- **AbleToTow Interface**: Enables vehicles like trucks to tow others.
-- **Vehicle Classes**: Includes `Truck`, `Motorbike`, `Car`, and `Wheel` classes with specific behaviors.
+---
 
-## Classes
+## User Story
 
-- **Vehicle**: A base class with common properties and methods (start, stop, accelerate).
-- **Truck**: Extends `Vehicle`, implements `AbleToTow` for towing other vehicles.
-- **Motorbike**: Inherits from `Vehicle`, representing a motorbike.
-- **Car**: Inherits from `Vehicle`, representing a car.
-- **Wheel**: Represents a wheel with basic properties like diameter.
+AS a developer  
+I WANT to update an existing application to include additional vehicle types  
+SO THAT I am able to comprehend and work with existing code bases.
+
+---
+
+## Acceptance Criteria
+
+- **GIVEN** a command-line application that accepts user input:
+  - **WHEN** I am prompted to create a new vehicle or perform an action on an existing vehicle:
+    - **THEN** I can choose between the two options (create a new vehicle or perform an action on an existing vehicle).
+  
+  - **WHEN** I am prompted to choose the vehicle type during creation:
+    - **THEN** I can choose between **Car**, **Truck**, or **Motorbike**.
+  
+  - **WHEN** I am prompted for details about the vehicle:
+    - **THEN** I can enter the vehicle information (e.g., make, model, year, weight, etc.).
+  
+  - **WHEN** I have entered all the vehicle information:
+    - **THEN** I can use the created vehicle.
+  
+  - **WHEN** I select an existing vehicle:
+    - **THEN** I can perform actions on the selected vehicle.
+  
+  - **WHEN** I perform an action with a vehicle:
+    - **THEN** I will see the result of the action in the command-line interface.
+  
+  - **WHEN** I complete the process of performing an action:
+    - **THEN** I can perform additional actions until I choose to exit.
+
+---
+
+## Features
+
+- **Create a New Vehicle**: Users can create a new vehicle by entering its details.
+  - Available vehicle types: **Car**, **Truck**, **Motorbike**.
+  - For **Motorbikes**, users can perform a **wheelie** action.
+  - For **Trucks**, users can **tow** other vehicles.
+  
+- **Perform Actions with Vehicles**:
+  - **Start the vehicle**: Start the selected vehicle and set its current speed.
+  - **Turn right**: Turn the vehicle right.
+  - **Wheelie**: Perform a wheelie (only available for **Motorbikes**).
+  - **Tow**: Tow another vehicle (only available for **Trucks**).
+  
+- **View Vehicle Details**: Print the vehicle details, including VIN, make, model, year, weight, color, and wheels.
+
+- **Command-Line Interface (CLI)**: Built with **Inquirer** to prompt the user for input and allow easy interaction.
+
+---
+
+### 1. Repository link
+
+ https://github.com/girma1978/typescript-assignmnet
+ 
+ 
+---
 
 ## link to the video 
-https://drive.google.com/file/d/1etdKYFBmHN0nONj71jVTR0Y6lhetk--0/view?usp=sharing
-
-
-
-
+https://drive.google.com/file/d/1-3bglbn-p03d3iiUO1VpTPywgvmRN0TV/view?usp=sharing
 
 
